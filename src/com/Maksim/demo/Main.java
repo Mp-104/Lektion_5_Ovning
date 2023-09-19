@@ -11,9 +11,20 @@ public class Main {
 
         System.out.println("Player #1 " + name);
 
+
+
+
         System.out.println("Ange ett tal");
         Scanner scan1 = new Scanner(System.in);
+        while (!scan1.hasNextInt()) {                // uppgift 6
+            System.out.println("inte ett tal");
+            scan1.next();
+        }
+
         int tal1 = scan1.nextInt();
+
+
+
 
         System.out.println("Du angav talet: " + tal1);
         for (int i = 0; i < tal1; i++) {
@@ -51,10 +62,10 @@ public class Main {
         }while (iGång);
         System.out.println("avslutar");
 
-        /* while (!scan.hasNextInt()) {
+       /* while (!scan.hasNextInt()) {
             System.out.println("That's not a number!");
             scan.next();
-        }*/
+        } */
 
 
 
