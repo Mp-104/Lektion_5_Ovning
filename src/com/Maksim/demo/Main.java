@@ -11,6 +11,15 @@ public class Main {
 
         System.out.println("Player #1 " + name);
 
+        System.out.println("Ange ett tal");
+        Scanner scan1 = new Scanner(System.in);
+        int tal1 = scan1.nextInt();
+
+        System.out.println(tal1);
+        for (int i = 0; i < tal1; i++) {
+            System.out.println("denna loop körs så många gånger: " + tal1 );
+        }
+
         /*while (!scan.hasNextInt()) {
             System.out.println("That's not a number!");
             scan.next();
