@@ -7,7 +7,7 @@ public class Main {
 
         System.out.println("Ange användarnamn: ");
         Scanner scan = new Scanner (System.in);
-        String name = scan.next();
+        String name = scan.nextLine();
 
         System.out.println("Player #1 " + name);
 
@@ -15,12 +15,19 @@ public class Main {
         Scanner scan1 = new Scanner(System.in);
         int tal1 = scan1.nextInt();
 
-        System.out.println(tal1);
+        System.out.println("Du angav talet: " + tal1);
         for (int i = 0; i < tal1; i++) {
             System.out.println("denna loop körs så många gånger: " + tal1 );
         }
 
-        /*while (!scan.hasNextInt()) {
+
+        do {
+            String a = scan.nextLine();
+            System.out.println( a + " fortsätter köras..");
+
+        }while (true);
+
+        /* while (!scan.hasNextInt()) {
             System.out.println("That's not a number!");
             scan.next();
         }*/
