@@ -24,14 +24,32 @@ public class Main {
         boolean iGång = (true);
 
         do {
+            System.out.println("skriv nånting. 1 = throwing, stop = avsluta");
             String a = scan.nextLine();
             System.out.println( a + " fortsätter köras.. skriv stop för att avsluta");
 
-            if (a.equals("stop")) {
+            /*if (a.equals("stop")) {
                 iGång = false;
+            }*/
+
+            switch (a) {
+                case "stop":
+                    iGång = false;
+                    break;
+
+                case "1":
+                    System.out.println("Throwing");
+                    break;
+
+                default:
+                    System.out.println("Wrong input");
+
+
             }
 
+
         }while (iGång);
+        System.out.println("avslutar");
 
         /* while (!scan.hasNextInt()) {
             System.out.println("That's not a number!");
