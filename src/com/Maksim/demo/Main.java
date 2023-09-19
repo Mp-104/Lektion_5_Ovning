@@ -21,11 +21,17 @@ public class Main {
         }
 
 
+        boolean iGång = (true);
+
         do {
             String a = scan.nextLine();
-            System.out.println( a + " fortsätter köras..");
+            System.out.println( a + " fortsätter köras.. skriv stop för att avsluta");
 
-        }while (true);
+            if (a.equals("stop")) {
+                iGång = false;
+            }
+
+        }while (iGång);
 
         /* while (!scan.hasNextInt()) {
             System.out.println("That's not a number!");
